@@ -1,28 +1,31 @@
 -- Create the category table
 CREATE TABLE category (
-    category_id VARCHAR(10) PRIMARY KEY,
+	category_id VARCHAR(10) PRIMARY KEY,
     category VARCHAR(50) NOT NULL
 );
+
 -- Create the subcategory table
 CREATE TABLE subcategory (
-    subcategory_id VARCHAR(10) PRIMARY KEY,
+	subcategory_id VARCHAR(10) PRIMARY KEY,
     subcategory VARCHAR(50) NOT NULL
-);
--- Create the contacts table
+);	
+
+--Create the contacts table
 CREATE TABLE contacts (
     contact_id INT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    email VARCHAR(100) NOT NULL
+    email VARCHAR(50) NOT NULL
 );
+
 -- Create the campaign table
 CREATE TABLE campaign (
     cf_id INT PRIMARY KEY,
     contact_id INT NOT NULL,
     company_name VARCHAR(100) NOT NULL,
-    description TEXT NOT NULL,
-    goal DECIMAL(10,2) NOT NULL,
-    pledged DECIMAL(10,2) NOT NULL,
+    description VARCHAR (100) NOT NULL,
+    goal FLOAT NOT NULL,
+    pledged FLOAT NOT NULL,
     outcome VARCHAR(50) NOT NULL,
     backers_count INT NOT NULL,
     country VARCHAR(10) NOT NULL,
@@ -40,10 +43,3 @@ SELECT * FROM contacts;
 SELECT * FROM campaign;
 SELECT * FROM subcategory;
 SELECT * FROM category;
-
-
-
-
-
-
-
