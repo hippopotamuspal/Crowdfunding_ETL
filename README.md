@@ -1,5 +1,7 @@
 # Crowdfunding ETL Project
 
+## Project 2 - Group 1: Quinn Daley, Oumar Diakite, and Kimberly Her
+
 ## Overview
 This project demonstrates an Extract, Transform, and Load (ETL) process by using Python and Pandas. The project involved extracting data from Excel files, transforming it into cleaner CSV files, and loading the data into a PostgreSQL database. The goal was to automate the process of structuring our data from raw crowdfunding data to be ready to be stored and analyzed in a SQL database.
 
@@ -13,7 +15,10 @@ The project was divided into the following steps:
 ## Crucial Files in Repository
 - **ETL_Mini_Project_QDaley, ODiakite, KHer.ipynb:** The main Jupyter Notebook where all data extraction, transformation, and loading processes are executed.
 - **crowfunding_db_shema.sql:** The SQL schema file containing the database structure for the crowdfunding database.
-- **Resources Folder:** Contains the Excel files (crowdfunding.xlsx and contacts.xlsx) for extracting and transforming the data.
+- **Crowdfunding_ERD:** Entity Relationship Diagram of database entities and their relationships.
+- __`Resources`__ folder contains CSV files that were imported into their corresponding SQL table, as well as the original Excel files (crowdfunding.xlsx and contacts.xlsx) for extracting and transforming the data. 
+- __`Visualization`__ folder contains the SQL table screenshots.  
+
 
 ## Process
 ### 1. Extract Data
@@ -48,3 +53,10 @@ Data transformation was split into several components:
 ### 4. Database Creation
 - Use the SQL schema file to create the necessary tables in a PostgreSQL database.
 - Import the CSV files into the corresponding tables and verify the import by running SELECT statements.
+
+## __Footnotes__
+
+Codes were referenced from the class activities and we used ChatGPT for assistance when our codes weren't running properly. 
+
+
+### __Thank you for visiting our ETL Project!__
